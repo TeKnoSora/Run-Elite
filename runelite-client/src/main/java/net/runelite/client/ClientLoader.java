@@ -38,10 +38,7 @@ public class ClientLoader
 	{
 		if (updateMode == UpdateCheckMode.AUTO)
 		{
-			final UpdateCheckClient updateCheck = new UpdateCheckClient();
-			updateMode = updateCheck.isOutdated() ?
-				UpdateCheckMode.VANILLA :
-				UpdateCheckMode.RUNELITE;
+			updateMode = UpdateCheckMode.RUNELITE;
 		}
 
 		try
